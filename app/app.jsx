@@ -1,15 +1,6 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React from 'react';
 
-class Hello extends React.Component {
-    render() {
-        return <h1>Hello lo</h1>
-    }
-}
+import {Hello} from './components/hello.jsx'; //todo remember to put component in curly brackets when importing
 
-class Bye extends React.Component {
-    render() {
-        return <h1>Bye yo</h1>
-    }
-}
-ReactDOM.render(<div><Hello/><Bye/></div> , document.getElementById('root'));
+ReactDOM.render(<Hello/> , document.getElementById('root'));
