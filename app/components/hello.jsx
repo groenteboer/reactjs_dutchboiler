@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Hello extends React.Component {
+export  class Hello extends React.Component {
 
     constructor(props) {
         super();
@@ -13,7 +13,7 @@ export default class Hello extends React.Component {
         let greet ;
 
         if (this.props) {
-            greet= this.props.timeofday ==='am' ? 'morning' : 'evening'
+            greet= this.props.timeofday ==='am' ? 'mornisng' : 'evening'
         }
         return <h1>Good {greet}</h1>
     }
