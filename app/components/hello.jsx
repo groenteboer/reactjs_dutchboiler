@@ -1,7 +1,23 @@
 import React from 'react';
 
-export class Hello extends React.Component {
+export default class Hello extends React.Component {
+
+    constructor(props) {
+        super();
+        this.props = props;
+        //todo remove
+        console.log('testing props', props);
+    }
+
     render() {
-        return <h1>hi there</h1>
+        let greet ;
+
+        if (this.props) {
+
+            greet= this.props.timeofday ==='am' ? 'morning' : 'evening'
+
+        }
+
+        return <h1>Good {greet}</h1>
     }
 }
