@@ -13,11 +13,8 @@ export default class Hello extends React.Component {
         let greet ;
 
         if (this.props) {
-
             greet= this.props.timeofday ==='am' ? 'morning' : 'evening'
-
         }
-
         return <h1>Good {greet}</h1>
     }
 }
