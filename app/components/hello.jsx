@@ -6,14 +6,14 @@ export  class Hello extends React.Component {
         super();
         this.props = props;
         //todo remove
-        console.log('testing props', props);
+        //console.log('testing props', props);
     }
 
     render() {
         let greet ;
 
         if (this.props) {
-            greet= this.props.timeofday ==='am' ? 'mornisng' : 'evening'
+            greet= this.props.timeofday ==='am' ? 'morning' : 'evening'
         }
         return <h1>Good {greet}</h1>
     }

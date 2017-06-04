@@ -7,7 +7,17 @@ test('if am then return goodmorning', () => {
 
     const wrapper = shallow(
         <Hello timeofday="am">
-            <strong>Hello World!</strong>
+        </Hello>
+    );
+
+    expect(toJson(wrapper)).toMatchSnapshot();
+
+});
+
+test('if pm then return good evening', () => {
+
+    const wrapper = shallow(
+        <Hello timeofday="pm">
         </Hello>
     );
 
