@@ -8,6 +8,7 @@ import {Hero} from './components/hero.jsx';
 
 //import 'bootstrap/dist/css/bootstrap.css';
 
-import './css/test.css';
+
+import './css/bootstrap.css';
 
 ReactDOM.render(<Hero/>, document.getElementById('root'));

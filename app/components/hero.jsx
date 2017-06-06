@@ -17,7 +17,7 @@ toggle(){
     render() {
         return (
             <div>
-               <Button onClick={this.toggle.bind(this)}></Button>
+               <Button onClick={this.toggle.bind(this)}>Click this</Button>
 
             </div>
         );
