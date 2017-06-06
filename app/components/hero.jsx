@@ -7,8 +7,7 @@ export class Hero extends Component {
         super(props, context);
 
         this.toggle = this.toggle.bind(this);
-
-        this.state = { open: false }
+        this.state = { open: true }
     }
 
     toggle() {
@@ -21,7 +20,7 @@ export class Hero extends Component {
         return (
             <div>
                 <Button onClick={this.toggle.bind(this)}>Click this</Button>
-                <div className={this.state==='open' ? 'open' :'close'}>
+                <div className={this.state.open ? 'open' :'close'}>
                     show me
                </div>
 
