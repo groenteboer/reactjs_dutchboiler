@@ -3,21 +3,27 @@ import { Button } from 'react-bootstrap';
 
 export class Hero extends Component {
 
-constructor(props, context) {
-    super(props, context);
-    
-    this.toggle = this.toggle.bind(this);
-}
+    constructor(props, context) {
+        super(props, context);
 
-toggle(){
-    console.log('toggle');
-    console.log('hahah');
-}
+        this.toggle = this.toggle.bind(this);
+
+        this.state = { open: false }
+    }
+
+    toggle() {
+        console.log('toggle');
+        this.setState({ open:!this.state.open});
+        console.log(this.state.open);
+    }
 
     render() {
         return (
             <div>
-               <Button onClick={this.toggle.bind(this)}>Click this</Button>
+                <Button onClick={this.toggle.bind(this)}>Click this</Button>
+                <div className={this.state==='open' ? 'open' :'close'}>
+                    show me
+               </div>
 
             </div>
         );
