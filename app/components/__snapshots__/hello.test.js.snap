@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`if am then return goodmorning 1`] = `
+<h1>
+  Good 
+  morning
+   , 
+  <h3>
+    jojo
+  </h3>
+</h1>
+`;
+
+exports[`if pm then return good evening 1`] = `
+<h1>
+  Good 
+  evening
+   , 
+  <h3>
+    jojo
+  </h3>
+</h1>
+`;

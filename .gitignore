@@ -9,6 +9,7 @@
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
+.idea/
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
@@ -45,3 +46,5 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+/node_modules
+/coverage
