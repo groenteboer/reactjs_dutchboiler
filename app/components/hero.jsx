@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
+import {Kid} from './Kid.jsx';
 
 export class Hero extends Component {
 
@@ -22,7 +23,10 @@ export class Hero extends Component {
                 <Button onClick={this.toggle.bind(this)}>Click this</Button>
                 <div className={this.state.open ? 'open' : 'close'}>
                     show me
+                      
                </div>
+            
+             
             </div>
         );
     }

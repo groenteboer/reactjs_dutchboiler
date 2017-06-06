@@ -6,4 +6,4 @@ import {Kid} from './components/kid.jsx';
 
 import './css/boiler.css';
 
-ReactDOM.render(<div> <Hero/> <Kid/> </div>, document.getElementById('root'));
+ReactDOM.render(<div> <Hero/><Kid/>  </div>, document.getElementById('root'));
