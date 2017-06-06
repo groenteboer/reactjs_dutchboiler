@@ -1,0 +1,21 @@
+.open {
+    display: block;
+}
+
+.close {
+    display:none;
+}
+
+.stuff {
+		z-index: 1064;
+		position: fixed;
+		width: 100%;
+		height: 20px;
+		box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+		background-color: #e2f1fc;
+		padding-top: 7px;	
+	}
+
+.rela {
+	position: relative;
+}
