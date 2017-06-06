@@ -4,8 +4,6 @@ import {Hello} from './components/hello.jsx'; //todo remember to put component i
 import {Hero} from './components/hero.jsx';
 import {Kid} from './components/kid.jsx';
 
-//import './css/bootstrap.css';
-
 import './css/boiler.css';
 
 ReactDOM.render(<div> <Hero/> <Kid/> </div>, document.getElementById('root'));
