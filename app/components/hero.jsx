@@ -12,22 +12,17 @@ export class Hero extends Component {
 
     toggle() {
         console.log('toggle');
-        this.setState({ open:!this.state.open});
+        this.setState({ open: !this.state.open });
         console.log(this.state.open);
     }
 
     render() {
         return (
-            <div className='header'>
+            <div className="rela">
                 <Button onClick={this.toggle.bind(this)}>Click this</Button>
-                <div className={this.state.open ? 'open' :'close'}>
+                <div className={this.state.open ? 'open' : 'close'}>
                     show me
                </div>
-               <div>
-                   some text : dont push me down
-               </div>
-
-
             </div>
         );
     }
