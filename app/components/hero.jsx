@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
-import { Kid } from './Kid.jsx';
+import { Kid } from './kid.jsx';
 
 export class Hero extends Component {
 
