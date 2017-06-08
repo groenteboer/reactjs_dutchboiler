@@ -42,6 +42,9 @@
 
 .tileseven
 {
+    display:flex;
+    flex-direction: column;
     background:transparent;
     font-size: 30px;
+
 }
