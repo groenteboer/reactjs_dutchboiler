@@ -13,7 +13,7 @@ export class HomeAway extends Component {
                         <img className="" src="./logo.png" alt=""/>
                     </div>
                     <div className="col-md-9">
-                        <p>this is some text</p>
+                        <p>this is some sfdsfds</p>
                     </div>
                 </div>
             </div>

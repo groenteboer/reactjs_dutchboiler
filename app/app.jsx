@@ -4,7 +4,9 @@ import {Hello} from './components/hello.jsx'; //todo remember to put component i
 import {Hero} from './components/hero.jsx';
 import {Kid} from './components/kid.jsx';
 import {HomeAway} from './components/homeaway.jsx';
+import DivDiv from './components/divindiv.jsx';
 
-import './css/boiler.css';
+import './css/divdiv.css';
 
-ReactDOM.render(<div><p>jhjhjhjhjhjh</p> <HomeAway/>  </div>, document.getElementById('root'));
+
+ReactDOM.render(<div> <DivDiv/>  </div>, document.getElementById('root'));

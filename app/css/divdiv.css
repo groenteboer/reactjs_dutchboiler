@@ -1,0 +1,9 @@
+#parentDiv {
+    position: relative;
+}
+
+#parentDiv .childDiv {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

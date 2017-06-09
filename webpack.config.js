@@ -1,5 +1,6 @@
 var path = require("path");
 //const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -33,5 +34,8 @@ module.exports = {
                 test: /\.css$/,
                 use:['style-loader','css-loader','sass-loader']
             }]
-    }
+    },
+    plugins: [
+        new webpack.NamedModulesPlugin()
+    ]
 };
