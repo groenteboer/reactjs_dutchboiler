@@ -1,3 +1,7 @@
+if (module.hot) {
+    module.hot.accept()
+}
+
 import ReactDOM from 'react-dom';
 import React from 'react';
 import {Hello} from './components/hello.jsx'; //todo remember to put component in curly brackets when importing
@@ -8,6 +12,6 @@ import DivDiv from './components/divindiv.jsx';
 
 import './css/divdiv.css';
 //todo remove
-console.log('testing not here');
+console.log('sdfdsfsdf');
 
 ReactDOM.render(<div> <DivDiv/>  </div>, document.getElementById('root'));

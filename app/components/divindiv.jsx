@@ -6,7 +6,7 @@ export class DivDiv extends Component {
 
         return (
             <div>
-ssss
+lskfdjldsjflkdsjflkjsdlkj
                 <div className="row childDiv">
                     <div className="col-md-6">one</div>
                     <div className="col-md-6">two</div>

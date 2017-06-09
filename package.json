@@ -44,6 +44,9 @@
     "reactstrap": "^4.6.2",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.1",
-    "webpack": "^2.6.1"
+    "webpack": "^2.1.0-beta.28",
+    "webpack-dev-server": "^2.2.0-rc.0"
+
+
   }
 }
