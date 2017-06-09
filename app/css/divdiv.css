@@ -1,9 +1,20 @@
 #parentDiv {
     position: relative;
+    border:3px solid red;
+    height:200px;
+    padding:10px;
 }
+
+/*#parentDiv img{*/
+    /*height:auto;*/
+    /*width:50%;*/
+/*}*/
 
 #parentDiv .childDiv {
     position: absolute;
     bottom: 0;
     left: 0;
+    width:100%;
+    border: 2px solid green;
+    margin:5px;
 }
