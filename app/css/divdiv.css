@@ -18,3 +18,11 @@
     border: 2px solid green;
     margin:5px;
 }
+
+.bg
+{
+    background-image:url(http://static.asiawebdirect.com/m/bangkok/portals/vietnam/homepage/hoi-an/cua-dai-beach/pagePropertiesImage/cua-dai-beach.jpg.jpg);
+    background-position:center;
+    background-size:cover;
+
+}
