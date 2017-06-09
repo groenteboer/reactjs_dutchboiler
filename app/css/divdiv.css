@@ -5,10 +5,10 @@
     padding:10px;
 }
 
-/*#parentDiv img{*/
-    /*height:auto;*/
-    /*width:50%;*/
-/*}*/
+#parentDiv img{
+    height:auto;
+    width:10%;
+}
 
 #parentDiv .childDiv {
     position: absolute;
@@ -21,7 +21,7 @@
 
 .bg
 {
-    background-image:url(http://static.asiawebdirect.com/m/bangkok/portals/vietnam/homepage/hoi-an/cua-dai-beach/pagePropertiesImage/cua-dai-beach.jpg.jpg);
+    background-image:url(https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
     background-position:center;
     background-size:cover;
 
