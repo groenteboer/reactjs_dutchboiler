@@ -4,11 +4,17 @@ export class DivDiv extends Component {
     render() {
         return (
 
-            <div id="parentDiv">
+            <div id="parentDiv" className="col-lg-12">
+                hello
                 <div className="childDiv">
-                    <img className="img-responsive"
-                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHvElQPvE4mpefl9D6qy2BmBsD2UCbKdJbn2I1kkpFRaTDoLhb2g"
-                         alt=""/>
+                    <div className="col-lg-12 hidden-xs">
+                        alleen lg
+                        <img src="app/images/coca.png" className="img-responsive-lg" alt=""/>
+                    </div>
+                    <div className="col-xs-12 hidden-lg">
+                        alleen xs
+                        <img src="app/images/coca.png" className="img-responsive-xs" alt=""/>
+                    </div>
                 </div>
             </div>
         );

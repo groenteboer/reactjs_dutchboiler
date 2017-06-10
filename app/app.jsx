@@ -14,4 +14,4 @@ import './css/divdiv.css';
 
 import Stack from './components/stack.jsx';
 
-ReactDOM.render(<div> <DivDiv/>  </div>, document.getElementById('root'));
+ReactDOM.render(<div className="container"> <DivDiv/>  </div>, document.getElementById('root'));

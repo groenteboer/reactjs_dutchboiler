@@ -13,7 +13,7 @@
     left: 0;
     width:100%;
     border: 2px solid green;
-    
+
 }
 
 /*todo responsive image style */
@@ -24,3 +24,16 @@
     background-size:auto;
     border:3px solid yellow;
 }
+
+.img-responsive-lg
+{
+    height:auto;
+    width:20%;
+}
+
+.img-responsive-xs
+{
+    height:auto;
+    width:10%;
+}
+
