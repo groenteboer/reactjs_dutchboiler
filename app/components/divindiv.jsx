@@ -4,8 +4,8 @@ export class DivDiv extends Component {
     render() {
         return (
 
-            <div id="parentDiv" className="col-lg-12">
-                hello
+            <div id="parentDiv" className="col-lg-12 bg">
+
                 <div className="childDiv">
                     <div className="col-lg-12 hidden-xs">
                         alleen lg
@@ -16,6 +16,7 @@ export class DivDiv extends Component {
                         <img src="app/images/coca.png" className="img-responsive-xs" alt=""/>
                     </div>
                 </div>
+
             </div>
         );
     }
