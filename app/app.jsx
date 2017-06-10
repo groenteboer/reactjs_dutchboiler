@@ -10,8 +10,10 @@ import {Kid} from './components/kid.jsx';
 import {HomeAway} from './components/homeaway.jsx';
 import DivDiv from './components/divindiv.jsx';
 
-import './css/divdiv.css';
+import './css/flex.css';
 
-import Stack from './components/stack.jsx';
+import Flex from './components/flex.jsx';
 
-ReactDOM.render(<div className="container"> <DivDiv/>  </div>, document.getElementById('root'));
+//todo remove
+console.log('testing hello');
+ReactDOM.render(<div className="container"> <Flex/>  </div>, document.getElementById('root'));

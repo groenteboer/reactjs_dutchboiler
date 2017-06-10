@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .wrapper {
+    flex: 1;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap:wrap-reverse;
+}
+.container .item {
+    color: white;
+    background-color: #333;
+    margin: 5px;
+    flex-basis: calc(50% - 10px);
+}
+.container .item.square,
+.container .item.double {
+    flex-basis: calc(100% - 10px);
+}
