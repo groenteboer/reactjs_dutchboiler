@@ -11,7 +11,7 @@ import {HomeAway} from './components/homeaway.jsx';
 import DivDiv from './components/divindiv.jsx';
 
 import './css/divdiv.css';
-//todo remove
-console.log('sdfdsfsdf');
+
+import Stack from './components/stack.jsx';
 
 ReactDOM.render(<div> <DivDiv/>  </div>, document.getElementById('root'));
