@@ -10,8 +10,8 @@ import {Kid} from './components/kid.jsx';
 import {HomeAway} from './components/homeaway.jsx';
 import Sidebar from './components/sidebar.jsx';
 
-import './css/sidebar.css';
+import './css/FlexTesting.css';
 
-import Stack from './components/stack.jsx';
+import FlexTesting from './components/FlexTesting.jsx';
 
-ReactDOM.render(<div className="container"> <Sidebar/>  </div>, document.getElementById('root'));
+ReactDOM.render(<div className="container"> <FlexTesting/>  </div>, document.getElementById('root'));
