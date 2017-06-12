@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.sidebar, .content {
+    border: 1px solid green;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 300px);
+    width: 200px;
+}
+.content {
+    max-width: 400px;
+    margin-left: calc(50% - 100px);
+}
+.content p {
+    font-size: 48px;
+}
+@media (max-width: 600px) {
+    .sidebar {
+        left: 0;
+    }
+    .content {
+        margin-left: 200px;
+    }
+}

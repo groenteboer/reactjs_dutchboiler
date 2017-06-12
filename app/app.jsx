@@ -8,10 +8,10 @@ import {Hello} from './components/hello.jsx'; //todo remember to put component i
 import {Hero} from './components/hero.jsx';
 import {Kid} from './components/kid.jsx';
 import {HomeAway} from './components/homeaway.jsx';
-import DivDiv from './components/divindiv.jsx';
+import Sidebar from './components/sidebar.jsx';
 
-import './css/divdiv.css';
+import './css/sidebar.css';
 
 import Stack from './components/stack.jsx';
 
-ReactDOM.render(<div className="container"> <DivDiv/>  </div>, document.getElementById('root'));
+ReactDOM.render(<div className="container"> <Sidebar/>  </div>, document.getElementById('root'));
