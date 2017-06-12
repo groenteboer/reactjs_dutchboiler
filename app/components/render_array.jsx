@@ -5,16 +5,14 @@ import React, {Component} from 'react';
 
 export class Array_render extends Component {
 
-
-
-
-
-    render(){
+    render() {
         var stations = [
-            {call:'station one',frequency:'000'},
-            {call:'station two',frequency:'001'}
+            {call: 'station one', frequency: '000'},
+            {call: 'station two', frequency: '001'}
         ];
 
+
+        //inject as property
         const Test = ({stations}) => (
             <div>
                 {stations.map(station => (
@@ -23,9 +21,7 @@ export class Array_render extends Component {
             </div>
         );
 
-
-
-        return (<div> <Test stations={stations}></Test></div>);
+        return (<div><Test stations={stations}></Test></div>);
     }
 
 }
