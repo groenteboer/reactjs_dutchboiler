@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 
 //todo  https://stackoverflow.com/questions/32157286/rendering-react-components-from-array-of-objects
 
-export class Stack extends Component {
+export class Array_render extends Component {
 
 
 
@@ -31,4 +31,4 @@ export class Stack extends Component {
 }
 
 
-export default Stack;
+export default Array_render;

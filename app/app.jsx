@@ -12,6 +12,6 @@ import Sidebar from './components/sidebar.jsx';
 
 import './css/test.css';
 
-import Stack from './components/Stack.jsx';
+import Array_render from './components/render_array.jsx';
 
-ReactDOM.render(<div className="container"> <Stack/>  </div>, document.getElementById('root'));
+ReactDOM.render(<div className="container"> <Array_render/>  </div>, document.getElementById('root'));
