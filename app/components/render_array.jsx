@@ -11,17 +11,24 @@ export class Array_render extends Component {
             {call: 'station two', frequency: '001'}
         ];
 
+        const journals = [{'title':'one','date':'12/03/17','entry':'This is an entry'},
+            {'title':'two','date':'14/03/17','entry':'This is another entry'}
+        ];
+
 
         //inject as property
-        const Test = ({stations}) => (
+        const Test = ({journals}) => (
             <div>
-                {stations.map(station => (
-                    <div className="station" key={station.call}>{station.call}</div>
+                {journals.map(journal => (
+                    <div>
+                        <h3>{journal.title} - {journal.date}</h3>
+                        <p>{journal.entry}</p>
+                    </div>
                 ))}
             </div>
         );
 
-        return (<div><Test stations={stations}></Test></div>);
+        return (<div><Test journals={journals}></Test></div>);
     }
 
 }
