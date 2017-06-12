@@ -6,17 +6,13 @@ import React, {Component} from 'react';
 export class Array_render extends Component {
 
     render() {
-        var stations = [
-            {call: 'station one', frequency: '000'},
-            {call: 'station two', frequency: '001'}
-        ];
 
-        const journals = [{'title':'one','date':'12/03/17','entry':'This is an entry'},
+        //const j = Object.values(this.state.journal);
+        const j = [{'title':'one','date':'12/03/17','entry':'This is an entry'},
             {'title':'two','date':'14/03/17','entry':'This is another entry'}
         ];
 
-
-        //inject as property
+        //inject j as property into Test
         const Test = ({journals}) => (
             <div>
                 {journals.map(journal => (
@@ -28,7 +24,9 @@ export class Array_render extends Component {
             </div>
         );
 
-        return (<div><Test journals={journals}></Test></div>);
+        return (
+            <div><Test journals={j}></Test></div>
+        );
     }
 
 }
