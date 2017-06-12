@@ -1,7 +1,8 @@
 .wrapper
 {
     display:flex;
-    flex-direction: row;
+    justify-content:flex-start;
+    border: 12px solid #3c763d;
 }
 
 
@@ -15,6 +16,7 @@
 }
 
 .box3{
+    /*order:5;*/
     background-color: #2e6da4;
 }
 
@@ -23,10 +25,11 @@
 }
 
 .box  {
-    flex:1;
-    min-height:100vh;
-    text-align: center;
-    vertical-align: middle;
-    border:10px solid;
+    /*flex:1;*/
+    /*min-height:100vh;*/
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    /*border:10px solid;*/
+    width:10%;
 
 }
