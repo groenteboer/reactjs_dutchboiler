@@ -13,16 +13,9 @@ export class Array_render extends Component {
         ];
 
 
-        const Ding = //define property for variable
-        ({items}) => (
-                    <div>
-                        {items.map(j => (
-                            j.title
-                        ))}
-                    </div>
-                );
 
-        return (  <div><Ding items={j}/>  hello</div>
+
+        return (<div>hello from hello</div>
         );
     }
 

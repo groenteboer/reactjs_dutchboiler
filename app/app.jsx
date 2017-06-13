@@ -10,8 +10,10 @@ import {Kid} from './components/kid.jsx';
 import {HomeAway} from './components/homeaway.jsx';
 import Sidebar from './components/sidebar.jsx';
 
+import {MainSnack} from "./components/main_snack.jsx"
+
 import './css/test.css';
 
 import Array_render from './components/render_array.jsx';
 
-ReactDOM.render(<div className="container"> <Array_render/>  </div>, document.getElementById('root'));
+ReactDOM.render(<div className="container"> <MainSnack/>  </div>, document.getElementById('root'));
