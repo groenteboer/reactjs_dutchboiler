@@ -1,5 +1,5 @@
 const initialState = {
-    todos:[]
+    todos:[{name:'first todo'}]
 }
 
 const Todos = (state = initialState, action) => {
@@ -8,6 +8,8 @@ const Todos = (state = initialState, action) => {
           var newState = Object.assign({}, state, {todos: [...state.todos, action.data]});
           return newState;
     default:
+        //todo remove
+        debugger;
       return state;
   }
 }

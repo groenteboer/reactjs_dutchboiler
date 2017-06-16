@@ -2,11 +2,11 @@ import { createStore, applyMiddleware } from 'redux'
 
 import reducer from './reducers/todos';
 
-const middleware = [ thunk ];
+//const middleware = [ thunk ];
 
 const store = createStore(
     reducer,
-    applyMiddleware(...middleware)
+   null
 )
 
 export default store;

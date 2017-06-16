@@ -1,4 +1,4 @@
-import store from './store';
+import store from './store.js';
 
 if (module.hot) {
     module.hot.accept()
@@ -9,4 +9,4 @@ import React from 'react';
 import {Todos} from './components/todos.jsx';
 import './css/test.css';
 
-ReactDOM.render(<div className="container" store={store}> <Todos/>  </div>, document.getElementById('root'));
+ReactDOM.render(<div className="container"> <Todos store={store}/>  </div>, document.getElementById('root'));
