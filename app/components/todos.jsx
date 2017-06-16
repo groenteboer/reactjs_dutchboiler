@@ -3,25 +3,31 @@ import {connect} from 'react-redux';
 import store from '../store';
 
 export class Todos extends Component {
-    
-    complete(val){
+
+    complete(val) {
         //todo remove
-        console.log('complete',val);
-          store.dispatch({type: 'TOGGLE'});
+        console.log('complete', val);
+        store.dispatch({type: 'TOGGLE',name:val});
     }
 
     render() {
+        let display;
+
+        if (this.props.todos) {
+            display = (this.props.todos.map
+                (
+                    (todo) => (
+                        <p className="" onClick={() => this.complete(todo.name)}>Hello, {todo.name}!</p>
+                    )
+                )
+            );
+        }
 
         //todo remove
         console.log('testing this.props.todos', this.props.todos);
 
         return (<div>
-                todos: {this.props.todos.map
-                                    (
-                                        (todo) => (
-                                            <p className="" onClick={() => this.complete(todo.name)}>Hello, {todo.name}!</p>
-                                        )
-                                    )}
+                todos: {display}
             </div>
         );
     }
@@ -30,9 +36,10 @@ export class Todos extends Component {
 
 const mapStateToProps = function (store) {
     //todo remove
-    console.log('testing here in mapstatetoprops:store.todos', store.todos);
+    debugger;
+    console.log('testing here in mapstatetoprops:store.todos', store);
     return {
-        todos: store.todos
+        todos: store
     }
 }
 

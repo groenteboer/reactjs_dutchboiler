@@ -7,8 +7,11 @@ export class EnterTodo extends Component {
         //todo remove
         console.log('testing addtodo');
 
+        //todo remove
+        debugger;
+
         //dispatch action
-        store.dispatch({type: 'ADD_TODO', data:{name:val} });
+        store.dispatch({type: 'ADD_TODO', text:val });
 
     }
 
