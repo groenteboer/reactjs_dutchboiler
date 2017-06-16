@@ -1,5 +1,5 @@
 const initialState = {
-    todos:[{name:'first todo'}]
+    todos:[{name:'first todo'},{name:'second todo'}]
 }
 
 const Todos = (state = initialState, action) => {
