@@ -9,13 +9,15 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import Todos from './components/todos.jsx';
 import './css/test.css';
-
-
+import EnterTodo from "./components/enter_todo.jsx";
 
 
 const App = () => (
     <Provider store={store}>
-        <Todos />
+       <div>
+           <Todos />
+           <EnterTodo/>
+       </div>
     </Provider>
 );
 

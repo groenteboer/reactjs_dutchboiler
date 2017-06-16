@@ -8,8 +8,6 @@ export class Todos extends Component {
         //todo remove
         console.log('testing this.props.todos', this.props.todos);
 
-        //todo remove
-        //debugger;
         return (<div>
                 todos: {this.props.todos.map
                                     (
