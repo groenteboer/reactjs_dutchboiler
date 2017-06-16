@@ -28,3 +28,6 @@ const mapStateToProps = function (store) {
 
 //todo how to handle export?
 export default connect(mapStateToProps)(Todos)
+
+
+//todo https://stackoverflow.com/questions/44580303/why-isnt-my-state-correctly-mapped-to-props-in-redux#44580374

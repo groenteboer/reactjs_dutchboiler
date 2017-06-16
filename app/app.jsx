@@ -7,7 +7,7 @@ if (module.hot) {
 
 import ReactDOM from 'react-dom';
 import React from 'react';
-import {Todos} from './components/todos.jsx';
+import Todos from './components/todos.jsx';
 import './css/test.css';
 
 
