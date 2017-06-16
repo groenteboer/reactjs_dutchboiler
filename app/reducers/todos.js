@@ -9,7 +9,7 @@ const Todos = (state = initialState, action) => {
           return newState;
     default:
         //todo remove
-        debugger;
+     //   debugger;
       return state;
   }
 }

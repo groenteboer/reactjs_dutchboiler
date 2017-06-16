@@ -1,4 +1,5 @@
 import store from './store.js';
+import {Provider} from 'react-redux';
 
 if (module.hot) {
     module.hot.accept()
@@ -9,4 +10,15 @@ import React from 'react';
 import {Todos} from './components/todos.jsx';
 import './css/test.css';
 
-ReactDOM.render(<div className="container"> <Todos store={store}/>  </div>, document.getElementById('root'));
+
+
+
+const App = () => (
+    <Provider store={store}>
+        <Todos />
+    </Provider>
+);
+
+ReactDOM.render(
+   <App/>
+    , document.getElementById('root'));
