@@ -1,21 +1,36 @@
 const initialState = {
-    todos:[{name:'first todo'},{name:'second todo'}]
+    todos: [{id:1,name: 'first todo', completed: false}, {id:2,name: 'second todo', completed: false}]
 }
 
 const Todos = (state = initialState, action) => {
-  switch (action.type) {
-      case "ADD_TODO":
-          //todo remove
-          console.log('ADD_TODO',action);
-          //todo remove
-          debugger;
-          var newState = Object.assign({}, state, {todos: [...state.todos, action.data]});
-          return newState;
-    default:
-        //todo remove
-     //   debugger;
-      return state;
-  }
+    switch (action.type) {
+        case "ADD_TODO":
+            return [
+                ...state,
+                {
+                    id: action.id,
+                    name: action.text,
+                    completed: false
+                }
+            ];
+        case "TOGGLE":
+            return state.map(
+                todo => {
+                    if (todo.name !== action.name) {
+                        return todo;
+                    }
+                    return {
+                        ...todo,
+                        completed: !todo.completed
+                    };
+                });
+
+
+        default:
+            //todo remove
+            //   debugger;
+            return state;
+    }
 }
 
 export default Todos;

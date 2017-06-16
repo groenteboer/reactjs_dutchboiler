@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import store from '../store';
 
 export class Todos extends Component {
+    
+    complete(val){
+        //todo remove
+        console.log('complete',val);
+          store.dispatch({type: 'TOGGLE'});
+    }
 
     render() {
 
@@ -12,7 +19,7 @@ export class Todos extends Component {
                 todos: {this.props.todos.map
                                     (
                                         (todo) => (
-                                            <p>Hello, {todo.name}!</p>
+                                            <p className="" onClick={() => this.complete(todo.name)}>Hello, {todo.name}!</p>
                                         )
                                     )}
             </div>
