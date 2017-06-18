@@ -7,20 +7,23 @@ export class Todos extends Component {
     complete(val) {
         //todo remove
         console.log('complete', val);
-        store.dispatch({type: 'TOGGLE',name:val});
+        store.dispatch({type: 'TOGGLE', name: val});
     }
 
     render() {
         let display;
 
         if (this.props.todos) {
-            display = (this.props.todos.map
+            display =
                 (
-                    (todo) => (
-                        <p key={todo.name} className={todo.completed ? 'strikethrough' : ''} onClick={() => this.complete(todo.name)}>Hello, {todo.name}!</p>
+                    this.props.todos.map
+                    (
+                        (todo) => (
+                            <p key={todo.name} className={todo.completed ? 'strikethrough' : ''}
+                               onClick={() => this.complete(todo.name)}>Hello, {todo.name}!</p>
+                        )
                     )
-                )
-            );
+                );
         }
 
         //todo remove

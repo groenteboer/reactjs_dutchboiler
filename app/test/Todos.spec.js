@@ -31,7 +31,6 @@ test('show 2 todos', () => {
 
     const wrapper = shallow(
         <Todos todos={todos}>
-
         </Todos>
     );
 
