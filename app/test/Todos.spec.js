@@ -6,7 +6,7 @@ import Todos from '../components/todos.jsx';
 test('show todos', () => {
 
     const wrapper = shallow(
-        <Todos props="">
+        <Todos>
 
         </Todos>
     );

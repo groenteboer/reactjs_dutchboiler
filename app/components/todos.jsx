@@ -27,7 +27,8 @@ export class Todos extends Component {
         console.log('testing this.props.todos', this.props.todos);
 
         return (<div>
-                todos: {display}
+                {/*todos: {display}*/}
+                hello
             </div>
         );
     }
