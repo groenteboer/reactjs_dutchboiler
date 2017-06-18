@@ -25,7 +25,7 @@ debugger;
             //todo dont forget the return here
             return state.map(todo => {
                     if (action.text !== todo.name) {
-                        return todo;
+                        return todo;fdsfsd
                     }
 
                     //todo remove
