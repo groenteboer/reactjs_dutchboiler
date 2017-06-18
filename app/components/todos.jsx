@@ -17,7 +17,7 @@ export class Todos extends Component {
             display = (this.props.todos.map
                 (
                     (todo) => (
-                        <p className={todo.completed ? 'strikethrough' : ''} onClick={() => this.complete(todo.name)}>Hello, {todo.name}!</p>
+                        <p key={todo.name} className={todo.completed ? 'strikethrough' : ''} onClick={() => this.complete(todo.name)}>Hello, {todo.name}!</p>
                     )
                 )
             );
