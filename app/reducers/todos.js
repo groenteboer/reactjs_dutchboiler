@@ -6,9 +6,18 @@ const todos = (state = [
     }
 ], action) => {
     switch (action.type) {
+        case "SHOWCOMPLETE":
+            //todo remove
+            debugger;
+            return state.map(todo => {
+                if (todo.completed) {
+                    return todo
+                }
+                else
+                {}
+            })
         case "ADD":
-//todo remove
-debugger;
+
             return [
                 ...state,
                 {
@@ -18,14 +27,12 @@ debugger;
                 }
             ];
 
-        case "TOGGLE":
-        {
-            //todo remove
-            debugger;
+        case "TOGGLE": {
             //todo dont forget the return here
             return state.map(todo => {
                     if (action.text !== todo.name) {
-                        return todo;fdsfsd
+                        return todo;
+                        fdsfsd
                     }
 
                     //todo remove
@@ -35,10 +42,7 @@ debugger;
                         completed: !todo.completed
                     }
                 }
-
-
             );
-
         }
 
 

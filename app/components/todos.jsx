@@ -5,6 +5,12 @@ import store from '../store';
 
 export class Todos extends Component {
 
+
+    showComplete(){
+        store.dispatch({type: 'SHOWCOMPLETE',text:''});
+
+    }
+
     complete(val){
 
  store.dispatch({type: 'TOGGLE',text:val});
@@ -15,15 +21,21 @@ export class Todos extends Component {
         let display='';
 
         if (this.props.todos) {
+            //todo remove
+            console.log('testing=this.props', this.props);
             display = this.props.todos.map
             (
-                (todo) => (
-                    <p className={todo.completed ? 'strikethrough' :''}  onClick={() => this.complete(todo.name)}> {todo.name}!</p>
-                )
+                    (todo) => (
+
+                        <p className={todo.completed ? 'strikethrough' : ''}
+                           onClick={() => this.complete(todo.name)}> {todo.name}!</p>
+                    )
+
             )
         }
         return (<div>
                 {display}
+                <a href="#" onClick={() => this.showComplete()}>show completed</a>
             </div>
         );
     }
