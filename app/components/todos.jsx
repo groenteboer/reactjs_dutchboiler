@@ -27,7 +27,7 @@ export class Todos extends Component {
             (
                     (todo) => (
 
-                        <p className={todo.completed ? 'strikethrough' : ''}
+                        <p key={todo.id} className={todo.completed ? 'strikethrough' : ''}
                            onClick={() => this.complete(todo.name)}> {todo.name}!</p>
                     )
 

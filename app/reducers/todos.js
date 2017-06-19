@@ -1,23 +1,16 @@
 const todos = (state = [
-    {
-        id: 1,
-        name: 'adssad',
-        completed: false
-    }
+
 ], action) => {
     switch (action.type) {
         case "SHOWCOMPLETE":
-            //todo remove
-            debugger;
-            return state.map(todo => {
+            //todo filter is better than map in this case
+            return state.filter(todo => {
                 if (todo.completed) {
                     return todo
                 }
-                else
-                {}
+
             })
         case "ADD":
-
             return [
                 ...state,
                 {
