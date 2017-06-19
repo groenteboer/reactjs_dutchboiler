@@ -21,8 +21,6 @@ export class Todos extends Component {
         let display='';
 
         if (this.props.todos) {
-            //todo remove
-            console.log('testing=this.props', this.props);
             display = this.props.todos.map
             (
                     (todo) => (
@@ -44,7 +42,7 @@ export class Todos extends Component {
 
 const mapStateToProps = function (store) {
 
-    console.log('store from todos=', store)
+    //console.log('store from todos=', store)
     return {
         todos: store
     }

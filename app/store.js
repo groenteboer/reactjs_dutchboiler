@@ -6,5 +6,5 @@ const store = createStore(
     reducer
 )
 
-console.log('store=fuck',store)
+
 export default store;
