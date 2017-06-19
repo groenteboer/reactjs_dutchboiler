@@ -66,7 +66,7 @@ test('show todos length 2', () => {
 // });
 
 
-test('should have strikethrough class present for completed todos', () => {
+test('should have strikethrough class present for completed todo', () => {
     let list =[
         {
             id: 1,
@@ -75,6 +75,8 @@ test('should have strikethrough class present for completed todos', () => {
         }
     ];
     const wrapper = shallow(<Todos todos={list} />);
+
     console.log('console wrapper.debug()=',wrapper.debug())
-    expect(wrapper.find('strikethrough').exists()).toBe(false);
+
+    expect(wrapper.find('.strikethrough').exists()).toBe(true);
 });
