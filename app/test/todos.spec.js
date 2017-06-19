@@ -68,7 +68,6 @@ test('whether contains className', () => {
         </Todos>
     );
     
-    console.log('wrapper.debug()=',wrapper.text())
-
-    expect(wrapper.text()).toMatch(/strikethrough/);
+    console.log('wrapper.debug()=',wrapper.debug())
+    expect(wrapper.debug()).toMatch(/strikethrough/);
 });
