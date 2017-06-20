@@ -8,17 +8,12 @@ if (module.hot) {
 import ReactDOM from 'react-dom';
 import React from 'react';
 import './css/test.css';
-import Todos from "./components/todos.jsx";
-import EnterTodo from "./components/entertodo.jsx";
-
-
+import Counter from './components/counter.jsx'
 
 const App = () => (
     <Provider store={store}>
         <div>
-            <EnterTodo/>
-            <Todos/>
-
+           <Counter/>
         </div>
     </Provider>
 );
