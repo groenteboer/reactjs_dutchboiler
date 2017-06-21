@@ -6,13 +6,14 @@ let products = [
         price: 12
     },
         {
-            id: 2,
-            name: 'pears',
-            price: 20
-        }
+        id: 2,
+        name: 'pears',
+        price: 20
+    }
 ]
 
 const cart = (state = products, action) => {
+
     switch (action.type) {
         case "ADD":
             return [
@@ -25,5 +26,7 @@ const cart = (state = products, action) => {
             return state;
     }
 }
+
+export const totalPrice =10;
 
 export default cart;
