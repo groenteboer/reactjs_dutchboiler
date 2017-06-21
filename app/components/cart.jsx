@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import store from '../store';
+import { getTotal } from '../reducers/cart';
 
 export class Cart extends Component {
 
@@ -15,6 +16,7 @@ export class Cart extends Component {
             (
                 (product) => (
                     <p> {product.name} - price:$ {product.price} </p>
+
                 )
             )
 
@@ -22,6 +24,8 @@ export class Cart extends Component {
 
         return (<div>
                 {display}
+
+                {this.props.total}
 
 
             </div>
@@ -32,7 +36,8 @@ export class Cart extends Component {
 
 const mapStateToProps = function (store) {
     return {
-        cart: store
+        cart: store,
+        total:getTotal(store)
     }
 }
 

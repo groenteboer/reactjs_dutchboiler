@@ -27,6 +27,6 @@ const cart = (state = products, action) => {
     }
 }
 
-export const totalPrice =10;
+export const getTotal = state => 10
 
 export default cart;
