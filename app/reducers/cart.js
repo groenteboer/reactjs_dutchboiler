@@ -27,6 +27,10 @@ const cart = (state = products, action) => {
     }
 }
 
-export const getTotal = state => 10
+export const getTotal = state => state.reduce(function(sum, item) {
+    return sum + item.price;
+}, 0);
+
+
 
 export default cart;
