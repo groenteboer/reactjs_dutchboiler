@@ -4,6 +4,11 @@ import store from '../store';
 
 export  class Products extends Component {
 
+
+    addToCart(p) {
+         store.dispatch({type: 'ADD',object:p});
+    }
+
     render() {
 
         let display;
@@ -14,7 +19,7 @@ export  class Products extends Component {
             display = this.props.products.map
             (
                 (product) => (
-                    <p> {product.name}</p>
+                    <p> {product.name} - price:$ {product.price} <button onClick={() => this.addToCart(product)}>add to cart</button></p>
                 )
             )
 
