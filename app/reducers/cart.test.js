@@ -18,5 +18,5 @@ test('reducer cart add item', () => {
     
     console.log('res=',res)
 
-    expect(res[0].name).toBe('pears');
+    expect(res[0].name).toBe('pearsds');
 });
