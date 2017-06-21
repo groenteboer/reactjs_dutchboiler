@@ -8,12 +8,16 @@ if (module.hot) {
 import ReactDOM from 'react-dom';
 import React from 'react';
 import './css/test.css';
-import Counter from './components/counter.jsx'
+import Products from './components/products.jsx';
+
+//
+
+
 
 const App = () => (
     <Provider store={store}>
         <div>
-           <Counter/>
+         <Products/>
         </div>
     </Provider>
 );
