@@ -34,7 +34,7 @@ export class Cart extends Component {
 
 }
 
-const mapStateToProps = function (store) {
+const mapStateToProps = function () {
     return {
         cart: store,
         total:getTotal(store)
