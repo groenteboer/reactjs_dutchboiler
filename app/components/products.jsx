@@ -9,7 +9,7 @@ export  class Products extends Component {
          store.dispatch({type: 'ADD',object:p});
     }
 
-    render() {
+    render = () => {
 
         let display;
 
