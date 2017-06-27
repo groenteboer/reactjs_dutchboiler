@@ -26,6 +26,7 @@ export  class Products extends Component {
         }
 
         return (<div>
+                PRODUCTS:
                 {display}
 
 

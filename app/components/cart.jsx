@@ -23,7 +23,8 @@ export class Cart extends Component {
         }
 
         return (<div>
-                {display}fsfsdfsdfdsfsad
+                ------------------------CART:<br/>
+                total price:${display}
 
                 {this.props.total}
 
