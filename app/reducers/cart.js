@@ -13,7 +13,6 @@ let products = [
 ]
 
 const cart = (state = products, action) => {
-
     switch (action.type) {
         case "ADD":
             return [
@@ -28,9 +27,9 @@ const cart = (state = products, action) => {
 }
 
 export const getTotal = state => state.reduce(function(sum, item) {
+    console.log('sum=',sum)
     return sum + item.price;
 }, 0);
-
 
 
 export default cart;

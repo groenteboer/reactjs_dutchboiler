@@ -9,7 +9,7 @@ describe('counter component tests', () => {
             <Counter/>
         );
 
-        console.log('wrapper.debug()=', wrapper.debug())
+        //wconsole.log('wrapper.debug()=', wrapper.debug())
         expect(wrapper.text()).toMatch(/add/)
 
     });

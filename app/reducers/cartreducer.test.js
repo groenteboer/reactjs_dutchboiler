@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import cart from '../reducers/cart';
 import {totalPrice} from '../reducers/cart';
+import { getTotal } from '../reducers/cart';
 
 describe('reducer cart', () => {
 
@@ -18,14 +19,28 @@ describe('reducer cart', () => {
             }
         });
 
-        console.log('res=', res)
+        //console.log('res=', res)
 
         expect(res[0].name).toBe('pears');
     });
 
 
-    test('should up the price ', () => {
+    xtest('should up the price ', () => {
         expect(totalPrice).toBe(11);
     });
+
+    test('gettotal should equal sum', () => {
+
+        let state = [
+            {
+                id: 1,
+                name: 'apples',
+                price: 12
+            }];
+        expect( getTotal(state)).toBe(112);
+    });
+    
+    
+
 
 })
