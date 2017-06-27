@@ -23,7 +23,7 @@ export class Cart extends Component {
         }
 
         return (<div>
-                {display}
+                {display}test
 
                 {this.props.total}
 
