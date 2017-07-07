@@ -8,8 +8,7 @@ if (module.hot) {
 import ReactDOM from 'react-dom';
 import React from 'react';
 import './css/test.css';
-import Products from './components/products.jsx';
-import Cart from './components/cart.jsx';
+import Repay from './components/repay.jsx';
 
 //
 
@@ -17,8 +16,7 @@ import Cart from './components/cart.jsx';
 const App = () => (
     <Provider store={store}>
         <div>
-            <Products/>
-            <Cart/>
+            <Repay/>
         </div>
     </Provider>
 );
