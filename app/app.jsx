@@ -1,5 +1,6 @@
 import store from './store.js';
 import {Provider} from 'react-redux';
+import { Router, Route, hashHistory } from 'react-router'
 
 if (module.hot) {
     module.hot.accept()
@@ -8,19 +9,23 @@ if (module.hot) {
 import ReactDOM from 'react-dom';
 import React from 'react';
 import './css/test.css';
-import Repay from './components/repay.jsx';
+import Hero from './components/hero.jsx';
+import Cart from './components/cart.jsx';
 
 //
 
 
 const App = () => (
     <Provider store={store}>
-        <div>
-            <Repay/>
-        </div>
+        <Router history={hashHistory}>
+            <Route path="/" component={App}/>
+            {/* add the routes here */}
+            <Route path="/cart" component={Cart}/>
+            <Route path="/hero" component={Hero}/>
+        </Router>
     </Provider>
 );
 
-ReactDOM.render(
-    <App/>
+ReactDOM.render(<App/>
+
     , document.getElementById('root'));

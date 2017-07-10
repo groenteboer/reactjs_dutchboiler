@@ -6,6 +6,7 @@ import { getTotal } from '../reducers/cart';
 export class Cart extends Component {
 
     render() {
+        console.log('cart');
 
         let display;
 
