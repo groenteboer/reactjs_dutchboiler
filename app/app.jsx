@@ -25,7 +25,7 @@ const App = () => (
     <Provider store={store}>
         <Router history={appHistory} onUpdate={() => window.scrollTo(0, 0)}>
             <Route path="/" component={ Main }>
-                <IndexRoute component={ Greeting } />
+                {/*<IndexRoute component={ Greeting } />*/}
                 <Route path="/cart" component={ Cart } />
                 <Route path="/hero" component={ Hero } />
             </Route>

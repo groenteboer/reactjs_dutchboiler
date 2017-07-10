@@ -4,8 +4,8 @@ import { Link } from 'react-router'
  class Greeting extends React.Component {
 
     render() {
-        let greet = 'good eventing';
+        let greet = 'good evening';
 
-        return <div>{greet}</div>
+        return <div>Hello</div>
     }
 }
