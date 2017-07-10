@@ -1,14 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router'
 
  class Greeting extends React.Component {
 
     render() {
         let greet = 'good eventing';
-        //
-        // if (this.props.timeofday === 'am') {
-        //     greet = 'good morning';
-        // }
 
-        return <h1>hi there</h1>
+        return <div>{greet}</div>
     }
 }
