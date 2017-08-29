@@ -11,6 +11,8 @@ import './css/test.css';
 import Repay from './components/repay.jsx';
 import Counter from './components/counter.jsx';
 import Gree from './components/greeting';
+import NewCart from './components/newcart';
+
 
 //
 
@@ -18,7 +20,7 @@ import Gree from './components/greeting';
 const App = () => (
     <Provider store={store}>
         <div>
-           <Gree></Gree>
+           <NewCart></NewCart>
         </div>
     </Provider>
 );
