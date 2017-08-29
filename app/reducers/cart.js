@@ -9,6 +9,10 @@ let products = [
         id: 2,
         name: 'pears',
         price: 20
+    }, {
+        id: 3,
+        name: 'hoer',
+        price: 20
     }
 ]
 
