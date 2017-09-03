@@ -10,13 +10,9 @@ import './css/test.css';
 import Cart from './components/cart';
 import { createStore } from 'redux';
 
-
 import reducer from './reducers/cart'
 
 const store = createStore(reducer)
-
-//
-
 
 const App = () => (
     <Provider store={store}>

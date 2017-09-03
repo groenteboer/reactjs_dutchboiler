@@ -1,6 +1,9 @@
-const cart = (state = [], action) => {
+
+const cart = (state = [{"name":'tv'}], action) => {
     switch (action.type) {
         case "ADD":
+            //todo remove
+            debugger;
             return [
                 ...state,
                 {

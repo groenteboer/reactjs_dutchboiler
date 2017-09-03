@@ -10,7 +10,10 @@ export default class AddProduct extends Component {
 
 
     handleAddproduct = () => {
+         
+        console.log('ref=',this.refs.name.value);
 
+        this.props.addProduct(this.refs.name.value);
 
 
     }
@@ -18,7 +21,7 @@ export default class AddProduct extends Component {
     render() {
 
         return (<div>
-                <input type="text" value={this.state.product}/> <button onClick="this.handleAddproduct">add product</button>
+                <input type="text" ref="name" /> <button onClick={this.handleAddproduct}>add product</button>
             </div>
         );
     }
