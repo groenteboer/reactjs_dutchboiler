@@ -10,6 +10,8 @@ export default class AddProduct extends Component {
 
     handleAddproduct = () => {
         //does not get dispatched???:
+        //todo remove
+        debugger;
         this.props.addProduct(this.refs.name.value);
     }
 

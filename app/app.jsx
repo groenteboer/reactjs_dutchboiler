@@ -10,7 +10,7 @@ import './css/test.css';
 import Cart from './components/cart';
 import { createStore } from 'redux';
 
-import reducer from './reducers/cart'
+import reducer from './components/reducers'
 
 const store = createStore(reducer)
 

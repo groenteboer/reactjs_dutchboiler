@@ -1,21 +1,8 @@
+import { combineReducers } from 'redux'
+import cart from './cart'
 
-const cart = (state = [{"name":'tv'}], action) => {
-    switch (action.type) {
-        case "ADD":
-            //todo remove
-            debugger;
-            return [
-                ...state,
-                {
-                    id: state.length,
-                    name: action.text,
-                    completed: false
-                }
-            ];
+const rootReducer = combineReducers({
+    cart
+})
 
-        default:
-            return state;
-    }
-}
-
-export default cart;
+export default rootReducer
