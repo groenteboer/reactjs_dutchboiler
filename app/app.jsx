@@ -1,4 +1,3 @@
-import store from './store.js';
 import {Provider} from 'react-redux';
 
 if (module.hot) {
@@ -8,11 +7,13 @@ if (module.hot) {
 import ReactDOM from 'react-dom';
 import React from 'react';
 import './css/test.css';
-import Repay from './components/repay.jsx';
-import Counter from './components/counter.jsx';
-import Gree from './components/greeting';
-import NewCart from './components/newcart';
+import Cart from './components/cart';
+import { createStore } from 'redux';
 
+
+import reducer from './reducers/cart'
+
+const store = createStore(reducer)
 
 //
 
@@ -20,7 +21,7 @@ import NewCart from './components/newcart';
 const App = () => (
     <Provider store={store}>
         <div>
-           <NewCart></NewCart>
+           <Cart></Cart>
         </div>
     </Provider>
 );

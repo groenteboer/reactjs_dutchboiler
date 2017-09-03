@@ -1,0 +1,1 @@
+export const addProduct  = text => ({ type: 'ADD', text })
