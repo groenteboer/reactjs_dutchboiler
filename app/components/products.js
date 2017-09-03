@@ -9,13 +9,19 @@ export default class Products extends Component {
     }
 
     render() {
+        let display;
 
-        console.log('this.props=', this.props);
+        if (this.props.products.cart) {
+             display = this.props.products.cart.map
+            (
+                (todo) => (
+                    <p> {todo.name}!</p>
+                )
+            )
+        }
 
-        return (<div>
-                this is products
-            </div>
-        );
+        return <div> {display}</div>
+
     }
 
 }

@@ -44,7 +44,7 @@ export class Cart extends Component {
         return (
             <div>
                 <AddProduct addProduct={this.props.actions.addProduct}></AddProduct>
-                hello from cart
+                <Products products={this.props.products}></Products>
             </div>
         );
     }
