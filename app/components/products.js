@@ -12,6 +12,7 @@ export default class Products extends Component {
         let display;
 
         if (this.props.products.cart) {
+            console.log('this.props.products=',this.props.products);
              display = this.props.products.cart.map
             (
                 (todo) => (
