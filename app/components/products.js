@@ -1,17 +1,21 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const products = () => {
-
-    const pr = this.props.products.map
-    (
-        (pr) => (
-            <p> {pr.name}!</p>
-        )
-    )
+export default class Products extends Component {
 
 
-    return (<div>hello products: {pr}
+    constructor(props) {
+        super();
+        this.props = props;
+    }
 
+    render() {
 
-    </div>)
+        console.log('this.props=', this.props);
+
+        return (<div>
+                this is products
+            </div>
+        );
+    }
+
 }

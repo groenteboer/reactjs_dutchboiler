@@ -1,25 +1,28 @@
-const initialState = [
-    {
-        text: 'Use Redux',
-        completed: false,
-        id: 0
-    }
-]
-
-export default function cart(state = initialState, action) {
+export default function cart(state=[],action){
     switch (action.type) {
-        case 'ADD':
+        case "ADD":
+
+            const test = [
+                ...state,
+                {
+                    id: state.length,
+                    name: action.text,
+                    completed: false
+                }
+            ];
+            //todo remove
             debugger;
             return [
                 ...state,
                 {
-                    id: state.reduce((maxId, todo) => Math.max(todo.id, maxId), -1) + 1,
-                    completed: false,
-                    text: action.text
+                    id: state.length,
+                    name: action.text,
+                    completed: false
                 }
-            ]
+            ];
 
         default:
-            return state
+            return state;
     }
 }
+

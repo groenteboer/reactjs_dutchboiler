@@ -1,27 +1,64 @@
-import React, { Component } from 'react';
-import {connect} from 'react-redux';
+// import React, { Component } from 'react';
+//
+//
+// const Cart = ({products, actions}) => (
+//     <div>
+//         hello
+//         <AddProduct addProduct={actions.addProduct}></AddProduct>
+//         <Products products={products}></Products>
+//     </div>
+// )
+//
+// const mapStateToProps = state => ({
+//     products: state.products
+// })
+//
+// const mapDispatchToProps = dispatch => ({
+//     actions: bindActionCreators(AddActions, dispatch)
+// })
+//
+// export default connect(
+//     mapStateToProps,
+//     mapDispatchToProps
+// )(Cart)
+
+
+import React, {Component} from 'react';
 import AddProduct from './addproduct';
+import {connect} from 'react-redux';
 import Products from './products';
-import { bindActionCreators } from 'redux'
+import {bindActionCreators} from 'redux'
 import * as AddActions from './actions/addaction'
 
-const Cart = ({products, actions}) => (
-    <div>
-        hello
-        <AddProduct addProduct={actions.addProduct}></AddProduct>
-        {/*<Products products={products}></Products>*/}
-    </div>
-)
 
-const mapStateToProps = state => ({
-    products: state.products
-})
+export class Cart extends Component {
+
+    constructor(props) {
+        super();
+        this.props = props;
+    }
+
+    render() {
+        console.log('this.props=', this.props);
+        debugger;
+        return (
+            <div>
+                <AddProduct addProduct={this.props.actions.addProduct}></AddProduct>
+                hello from cart
+            </div>
+        );
+    }
+
+}
 
 const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators(AddActions, dispatch)
 })
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Cart)
+const mapStateToProps = function (store) {
+    return {
+        products: store
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart)
