@@ -7,7 +7,7 @@ if (module.hot) {
 import ReactDOM from 'react-dom';
 import React from 'react';
 import './css/test.css';
-import Cart from './components/cart';
+
 import { createStore } from 'redux';
 import Nothing from './components/nothing';
 
