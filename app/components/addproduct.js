@@ -1,21 +1,24 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import store from '../store';
 
 export default class AddProduct extends Component {
 
     constructor(props) {
         super();
         this.props = props;
-        this.state = {product: ''}
+        //todo remove
+        debugger;
     }
 
-    handleAddproduct = () => {
-        this.props.addProduct(this.refs.name.value);
+    handleClick = () => {
+        this.props.addProduct(this.refs.waarde.value);
     }
 
     render() {
         return (<div>
-                <input type="text" ref="name"/>
-                <button onClick={this.handleAddproduct}>add product</button>
+                <input type="text" ref="waarde"/>
+                <button onClick={this.handleClick}>add</button>s
             </div>
         );
     }

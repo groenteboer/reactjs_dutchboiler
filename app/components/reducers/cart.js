@@ -1,17 +1,6 @@
-export default function cart(state=[],action){
+const cart = (state = [], action) => {
     switch (action.type) {
         case "ADD":
-
-            const test = [
-                ...state,
-                {
-                    id: state.length,
-                    name: action.text,
-                    completed: false
-                }
-            ];
-            //todo remove
-            debugger;
             return [
                 ...state,
                 {
@@ -26,3 +15,4 @@ export default function cart(state=[],action){
     }
 }
 
+export default cart;

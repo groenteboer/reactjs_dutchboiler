@@ -1,4 +1,5 @@
 import {Provider} from 'react-redux';
+import {createStore} from 'redux';
 
 if (module.hot) {
     module.hot.accept()
@@ -6,19 +7,17 @@ if (module.hot) {
 
 import ReactDOM from 'react-dom';
 import React from 'react';
-import './css/test.css';
 
-import { createStore } from 'redux';
-import Nothing from './components/nothing';
+import reducer from './components/reducers';
 
-import reducer from './components/reducers'
+const store = createStore(reducer);
 
-const store = createStore(reducer)
+import Cart from './components/cart';
 
 const App = () => (
-    <Provider store={store}>
+    <Provider store ={store}>
         <div>
-           <Nothing></Nothing>
+            <Cart></Cart>
         </div>
     </Provider>
 );
