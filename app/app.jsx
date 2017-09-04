@@ -9,6 +9,7 @@ import React from 'react';
 import './css/test.css';
 import Cart from './components/cart';
 import { createStore } from 'redux';
+import Nothing from './components/nothing';
 
 import reducer from './components/reducers'
 
@@ -17,7 +18,7 @@ const store = createStore(reducer)
 const App = () => (
     <Provider store={store}>
         <div>
-           <Cart></Cart>
+           <Nothing></Nothing>
         </div>
     </Provider>
 );
