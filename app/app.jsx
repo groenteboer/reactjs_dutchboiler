@@ -1,4 +1,5 @@
 import {Provider} from 'react-redux';
+import DataRead from './components/DataRead'
 
 if (module.hot) {
     module.hot.accept()
@@ -18,7 +19,7 @@ const store = createStore(reducer)
 const App = () => (
     <Provider store={store}>
         <div>
-           <Nothing></Nothing>
+<DataRead></DataRead>
         </div>
     </Provider>
 );
