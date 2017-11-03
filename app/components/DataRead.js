@@ -14,14 +14,21 @@ export default class  extends Component {
         //axios('api/to webserice')
 
         // work response
-        let result = _.get(MockData,'chart.result');
+        let result = _.get(MockData,'chart');
 
-        console.log('result=',result[0].indicators.quote);
+        //todo remove
+        debugger;
+
+        console.log('result=',result.result[0].indicators.quote[0].close[0]);
 
     }
 
     render() {
-        this.getData();
+        //todo poll this:
+        let lastestPrice = this.getData();
+
+        console.log('lastestPrice=',lastestPrice);
+
         return (<div>
 
             </div>
