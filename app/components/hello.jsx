@@ -1,20 +1,13 @@
 import React from 'react';
 
-export  class Hello extends React.Component {
+export default  class Hello extends React.Component {
 
-    constructor(props) {
-        super();
-        this.props = props;
-        //todo remove
-        //console.log('testing props', props);
-    }
+
 
     render() {
-        let greet ;
-
-        if (this.props) {
-            greet= this.props.timeofday ==='am' ? 'morning' : 'evening'
-        }
-        return <h1>Good {greet} , <h3>jojo</h3></h1>
+   return (<div>
+   fuck you motherfucker
+   </div>)
     }
+    
 }

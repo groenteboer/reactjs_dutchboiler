@@ -13,7 +13,7 @@ export class Todos extends Component {
 
     complete(val){
 
- store.dispatch({type: 'TOGGLE',text:val});
+        store.dispatch({type: 'TOGGLE',text:val});
     }
 
     render() {

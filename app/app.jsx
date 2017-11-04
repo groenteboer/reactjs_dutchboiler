@@ -14,13 +14,16 @@ import Nothing from './components/nothing';
 
 import reducer from './components/reducers'
 
+import WrappedComponent from './components/testPoll.js'
+import Hello from './components/hello.jsx';
+
 const store = createStore(reducer)
 
 const App = () => (
     <Provider store={store}>
         <div>
-<DataRead></DataRead>
-        </div>
+            <Hello/>
+        </div>Ï
     </Provider>
 );
 
