@@ -24,7 +24,7 @@ const onPollInterval = (props, dispatch) => {
 The first invocation of asyncPoll will return a function
 that accepts only one argument: your component
 */
-export default asyncPoll(1*1000, onPollInterval)(WrappedComponent);
+export default asyncPoll(10*1000, onPollInterval)(WrappedComponent);
 
 
 //export default WrappedComponent
