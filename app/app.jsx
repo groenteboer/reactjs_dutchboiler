@@ -10,6 +10,7 @@ import './css/test.css';
 import Cart from './components/cart';
 import { createStore } from 'redux';
 import Nothing from './components/nothing';
+import WrappedComponent from './components/testPoll'
 
 import reducer from './components/reducers'
 
@@ -18,7 +19,7 @@ const store = createStore(reducer)
 const App = () => (
     <Provider store={store}>
         <div>
-           <Nothing></Nothing>
+          <WrappedComponent></WrappedComponent>
         </div>
     </Provider>
 );
