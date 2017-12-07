@@ -1,4 +1,4 @@
-reactjs / css sandbox
+## Reactjs boilerplate with webpack
 
 to run : webpack-dev-server from cmd line
 

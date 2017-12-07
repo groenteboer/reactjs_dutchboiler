@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react';;
 
 export default class Products extends Component {
-
 
     constructor(props) {
         super();
@@ -15,14 +14,12 @@ export default class Products extends Component {
             console.log('this.props.products=',this.props.products);
              display = this.props.products.cart.map
             (
-                (todo) => (
-                    <p> {todo.name}!</p>
+                (todo,i) => (
+                    <p key={i}> {todo.name}</p>
                 )
             )
         }
-
         return <div> {display}</div>
-
     }
 
 }
