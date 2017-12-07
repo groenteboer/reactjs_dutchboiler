@@ -1,6 +1,6 @@
-## Reactjs boilerplate with webpack
+## Reactjs/Redux boilerplate with webpack
 
-to run : webpack-dev-server from cmd line
+to run : npm start
 
 then goto : http://localhost:8080
 
